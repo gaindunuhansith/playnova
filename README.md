@@ -31,6 +31,10 @@ PlayNova is an online game store web application developed by a team of four for
 * Designed and implemented a scalable, maintainable Java web application.
 
 ## 👨‍💻 Team Members
+* Imeth Weerasooriya
+* Lehan Nawaratne
+* Gaindu Karunathilaka
+* Pavith Kavisika
 
 
 
