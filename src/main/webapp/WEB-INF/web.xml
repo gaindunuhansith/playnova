@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+         <servlet>
+         	<servlet-name>AddAdmin</servlet-name>
+         	<servlet-class>com.servlet.AddAdmin</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>AddAdmin</servlet-name>
+         	<url-pattern>/insert</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         	<servlet-name>Login</servlet-name>
+         	<servlet-class>com.servlet.Login</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>Login</servlet-name>
+         	<url-pattern>/log</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         	<servlet-name>AdminList</servlet-name>
+         	<servlet-class>com.servlet.AdminList</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>AdminList</servlet-name>
+         	<url-pattern>/list</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         	<servlet-name>adminUpdate</servlet-name>
+         	<servlet-class>com.servlet.adminUpdate</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>adminUpdate</servlet-name>
+         	<url-pattern>/update</url-pattern>
+         </servlet-mapping>
+         <servlet>
+         
+	    <servlet-name>adminDelete</servlet-name>
+	    <servlet-class>com.servlet.adminDelete</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		    <servlet-name>adminDelete</servlet-name>
+	    	<url-pattern>/delete</url-pattern>
+		</servlet-mapping>
+		
+		<!-- Insert a new user -->
+     <servlet>
+     	<servlet-name>user_insert_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_insert_servlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>user_insert_servlet</servlet-name>
+     	<url-pattern>/user_insert_servle</url-pattern>
+     </servlet-mapping>
+
+<!--Display users -->
+	<servlet>
+     	<servlet-name>get_all_users_servlet</servlet-name>
+     	<servlet-class>com.servlet.get_all_users_servlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>get_all_users_servlet</servlet-name>
+     	<url-pattern>/get_all_users_servle</url-pattern>
+     </servlet-mapping>
+
+<!--Update a user -->
+     <servlet>
+     	<servlet-name>user_update_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_update_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>user_update_servlet</servlet-name>
+     	<url-pattern>/user_update_servle</url-pattern>
+     </servlet-mapping>
+
+<!-- Delete a user -->
+     <servlet>
+     	<servlet-name>user_delete_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_delete_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>user_delete_servlet</servlet-name>
+     	<url-pattern>/user_delete_servle</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Login a user -->
+     <servlet>
+     	<servlet-name>user_login_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_login_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>user_login_servlet</servlet-name>
+     	<url-pattern>/user_login_servle</url-pattern>
+     </servlet-mapping>
+     
+     <!--Profile insert-->
+     <servlet>
+     	<servlet-name>user_profile_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_profile_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>user_profile_servlet</servlet-name>
+     	<url-pattern>/user_profile_servle</url-pattern>
+     </servlet-mapping>
+
+     <!--Update user profile-->
+     <servlet>
+     	<servlet-name>user_updateProfile_servlet</servlet-name>
+     	<servlet-class>com.servlet.user_updateProfile_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>user_updateProfile_servlet</servlet-name>
+     	<url-pattern>/user_updateProfile_servle</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Insert a new Announcement -->
+     <servlet>
+     	<servlet-name>ann_insert_servlet</servlet-name>
+     	<servlet-class>com.servlet.ann_insert_servlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>ann_insert_servlet</servlet-name>
+     	<url-pattern>/ann_insert_servle</url-pattern>
+     </servlet-mapping>
+     
+     
+     <!--Display an Announcements -->
+	<servlet>
+     	<servlet-name>get_all_anns_servlet</servlet-name>
+     	<servlet-class>com.servlet.get_all_anns_servlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>get_all_anns_servlet</servlet-name>
+     	<url-pattern>/get_all_anns_servle</url-pattern>
+     </servlet-mapping>
+     
+     
+     <!--Update an announcement -->
+     <servlet>
+     	<servlet-name>ann_update_servlet</servlet-name>
+     	<servlet-class>com.servlet.ann_update_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>ann_update_servlet</servlet-name>
+     	<url-pattern>/ann_update_servle</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Delete an announcement -->
+     <servlet>
+     	<servlet-name>ann_delete_servlet</servlet-name>
+     	<servlet-class>com.servlet.ann_delete_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>ann_delete_servlet</servlet-name>
+     	<url-pattern>/ann_delete_servle</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Display an announcement -->
+     <servlet>
+     	<servlet-name>display_ann_servlet</servlet-name>
+     	<servlet-class>com.servlet.display_ann_servlet</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+     	<servlet-name>display_ann_servlet</servlet-name>
+     	<url-pattern>/display_ann_servle</url-pattern>
+     </servlet-mapping>
+
+	 <servlet>
+     	<servlet-name> InsertReviewServlet </servlet-name>
+     	<servlet-class> com.servlet.InsertReviewServlet </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> InsertReviewServlet </servlet-name>
+     	<url-pattern> /InsertReviewServle </url-pattern>
+     </servlet-mapping>
+
+
+	<servlet>
+     	<servlet-name> ReviewGetAllServlet </servlet-name>
+     	<servlet-class> com.servlet.ReviewGetAllServlet </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> ReviewGetAllServlet </servlet-name>
+     	<url-pattern> /ReviewGetAllServle </url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name> ReviewUpdateServlet </servlet-name>
+     	<servlet-class> com.servlet.ReviewUpdateServlet </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> ReviewUpdateServlet </servlet-name>
+     	<url-pattern> /ReviewUpdateServle </url-pattern>
+     </servlet-mapping>
+
+
+ 	<servlet>
+     	<servlet-name> ReviewDeleteServlet </servlet-name>
+     	<servlet-class> com.servlet.ReviewDeleteServlet </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> ReviewDeleteServlet </servlet-name>
+     	<url-pattern> /ReviewDeleteServle </url-pattern>
+     </servlet-mapping>
+     
+     
+     
+ 	<servlet>
+     	<servlet-name> getReviewHome </servlet-name>
+     	<servlet-class> com.servlet.getReviewHome </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> getReviewHome </servlet-name>
+     	<url-pattern> /getReviewHom </url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name> deleteReviewAdmin </servlet-name>
+     	<servlet-class> com.servlet.deleteReviewAdmin </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> deleteReviewAdmin </servlet-name>
+     	<url-pattern> /deleteReviewAdmi </url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name> getDeleteDataServlet </servlet-name>
+     	<servlet-class> com.servlet.getDeleteDataServlet </servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name> getDeleteDataServlet </servlet-name>
+     	<url-pattern> /getDeleteDataServle </url-pattern>
+     </servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddGame</servlet-name>
+		<servlet-class>com.servlet.AddGame</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddGame</servlet-name>
+		<url-pattern>/addgame</url-pattern>
+	</servlet-mapping>    
+	
+	
+	<servlet>
+		<servlet-name>ManageGames</servlet-name>
+		<servlet-class>com.servlet.ManageGames</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageGames</servlet-name>
+		<url-pattern>/manageGames</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UpdateGame</servlet-name>
+		<servlet-class>com.servlet.UpdateGame</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateGame</servlet-name>
+		<url-pattern>/updategame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteGame</servlet-name>
+		<servlet-class>com.servlet.DeleteGame</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteGame</servlet-name>
+		<url-pattern>/deletegame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Store</servlet-name>
+		<servlet-class>com.servlet.Store</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Store</servlet-name>
+		<url-pattern>/store</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewGame</servlet-name>
+		<servlet-class>com.servlet.ViewGame</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewGame</servlet-name>
+		<url-pattern>/viewGame</url-pattern>
+	</servlet-mapping>
+
+</web-app>
