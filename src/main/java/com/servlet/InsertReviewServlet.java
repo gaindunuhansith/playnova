@@ -37,7 +37,7 @@ public class InsertReviewServlet extends HttpServlet {
 		
 		boolean isTrue;
 		
-		isTrue = ReviewController.insertdata(username, email, game, rating, review);
+		isTrue = ReviewController.insertData(username, email, game, rating, review);
 		
 		if(isTrue == true) {
 			String alertMessage = "Data Inserted Successfully.. !!";

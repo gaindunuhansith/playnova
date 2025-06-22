@@ -25,7 +25,7 @@ public class user_delete_servlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String U_ID =request.getParameter("U_ID");
 		boolean isTrue;
-		isTrue=user_control.deletedata(U_ID);
+		isTrue=user_control.deleteData(U_ID);
 		
 		if(isTrue ==true) {
 			

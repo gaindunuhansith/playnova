@@ -48,7 +48,7 @@ public class ReviewUpdateServlet extends HttpServlet {
 		
 		boolean isTrue;
 		
-		isTrue = ReviewController.updatedata(id, username, email, game, rating, review);
+		isTrue = ReviewController.updateData(id, username, email, game, rating, review);
 		
 		if(isTrue == true) {
 			List<ReviewModel> Review = ReviewController.getById(id);

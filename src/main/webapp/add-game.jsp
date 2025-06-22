@@ -14,10 +14,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Game</title>
-<link rel="icon" type="image/png" href="${pageContext.request.contextPath}/admin/assets/Favicon.png">
+<link rel="icon" type="image/png" href="<%= request.getContextPath() %>/admin/assets/Favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 	  * {
 	    margin: 0;
 	    padding: 0;

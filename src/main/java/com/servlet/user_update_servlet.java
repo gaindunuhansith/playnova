@@ -32,7 +32,7 @@ public class user_update_servlet extends HttpServlet {
 		String U_Password =  request.getParameter("U_Password");
 		
 		boolean isTrue;
-		isTrue = user_control.updatedata(U_ID,U_UserName, U_Email, U_PhoneNumber, U_Password);
+		isTrue = user_control.updateData(U_ID,U_UserName, U_Email, U_PhoneNumber, U_Password);
 		
          if(isTrue == true) {
         	 

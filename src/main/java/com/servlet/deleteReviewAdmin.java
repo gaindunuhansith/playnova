@@ -34,7 +34,7 @@ public class deleteReviewAdmin extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		boolean isTrue;
-		isTrue = ReviewController.deletedata(id);
+		isTrue = ReviewController.deleteData(id);
 		if(isTrue == true) {
 			String alertMessage = "Data Deleted Successfully.. !!";
 			response.getWriter().println("<script> alert ('"+alertMessage+"'); window.location.href='getDeleteDataServlet'</script>");

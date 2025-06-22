@@ -23,7 +23,7 @@ public class user_insert_servlet extends HttpServlet {
 		String U_Password =  request.getParameter("U_Password");
 
 		boolean isTrue;
-		isTrue = user_control.insertdata(U_UserName, U_Email, U_PhoneNumber, U_Password);
+		isTrue = user_control.insertData(U_UserName, U_Email, U_PhoneNumber, U_Password);
 
 		if(isTrue == true) {
 			

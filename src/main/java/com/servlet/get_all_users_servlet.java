@@ -18,7 +18,7 @@ public class get_all_users_servlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		List<user_model> allUsers = user_control.getAllUser();
+		List<user_model> allUsers = user_control.getAllUsers();
 		request.setAttribute("userall", allUsers);
 		
 		RequestDispatcher dispatcher= request.getRequestDispatcher("User_Details.jsp");
